@@ -1,0 +1,14 @@
+route:
+  group_by: [Alertname]
+  # Send all notifications to me.
+  receiver: email-me
+
+receivers:
+- name: email-me
+  email_configs:
+  - to: andrey@cryptex.com.ua
+    from: monitoring@cryptex.com.ua
+    smarthost: smtp.gmail.com:587
+    auth_username: "monitoring@cryptex.com.ua"
+    auth_identity: "monitoring@cryptex.com.ua"
+    auth_password: "123123QWEqwe"
