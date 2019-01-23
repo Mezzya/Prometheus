@@ -1,7 +1,7 @@
 route:
   group_by: [Alertname]
   # Send all notifications to me.
-  receiver: email-me
+  receiver: alertmananger-bot
 
 receivers:
 - name: email-me
@@ -12,3 +12,7 @@ receivers:
     auth_username: "monitoring@cryptex.com.ua"
     auth_identity: "monitoring@cryptex.com.ua"
     auth_password: "123123QWEqwe"
+- name: 'alertmananger-bot'
+  webhook_configs:
+  - send_resolved: true
+    url: 'http://localhost:9095'
