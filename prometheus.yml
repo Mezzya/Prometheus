@@ -17,6 +17,11 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['cadvisor:8080']
+  - job_name: 'lb01'
+    static_configs:
+      - targets: ['haproxy-explorer:9101']
+        labels:
+          alias: lb01
 
 
 rule_files:
