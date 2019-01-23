@@ -16,4 +16,4 @@ receivers:
   - name: alertmananger-bot
     webhook_configs:
     - send_resolved: true
-      url: 'http://localhost:9095'
+      url: 'http://alertmanager-bot:9095'
