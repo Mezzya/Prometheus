@@ -23,7 +23,7 @@ services:
         image: prom/alertmanager
         privileged: true
         volumes:
-             - ./alert.yml:/alertmanager.yml
+             - ./alertmanager.yml:/alertmanager.yml
         command:
             - '--config.file=/alertmanager.yml'
         ports:
