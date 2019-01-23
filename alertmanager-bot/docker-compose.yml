@@ -1,13 +1,13 @@
 version: '3'
 services:
-    alertmanager-bot:
-      image: metalmatze/alertmanager-bot:0.3.1
+  alertmanager-bot:
+    image: metalmatze/alertmanager-bot:0.3.1
       environment:
-        - ALERTMANAGER_URL=http://localhost:9093
-        - BOLT_PATH=/data/bot.db
-        - STORE=bolt
-        - TELEGRAM_ADMIN='364008202'
-        - TELEGRAM_TOKEN=781076437:AAFV9zWpKMr7AJ4jXh_9ISvmMXq8QxOG1r4
-        - TEMPLATE_PATHS=/templates/default.tmpl
+       - ALERTMANAGER_URL=http://localhost:9093
+       - BOLT_PATH=/data/bot.db
+       - STORE=bolt
+       - TELEGRAM_ADMIN='364008202'
+       - TELEGRAM_TOKEN=781076437:AAFV9zWpKMr7AJ4jXh_9ISvmMXq8QxOG1r4
+       - TEMPLATE_PATHS=/templates/default.tmpl
       volumes:
           - /srv/monitoring/alertmanager-bot:/data
