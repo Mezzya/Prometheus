@@ -14,6 +14,6 @@ services:
       - '--bolt.path=/data/bot.db'
       - '--store=bolt'
       - '--telegram.admin=364008202'
-      - '--btelegram.token=781076437:AAFV9zWpKMr7AJ4jXh_9ISvmMXq8QxOG1r4'
+      - '--telegram.token=781076437:AAFV9zWpKMr7AJ4jXh_9ISvmMXq8QxOG1r4'
     volumes:
         - /srv/monitoring/alertmanager-bot:/data
