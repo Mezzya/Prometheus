@@ -54,11 +54,10 @@ services:
         restart: unless-stopped
         expose:
           - 8080
-          
+
     grafana:
         image: grafana/grafana:5.4.2
         container_name: grafana
-        user: root
         volumes:
           - grafana_data:/var/lib/grafana
           - ./grafana/datasources:/etc/grafana/datasources
