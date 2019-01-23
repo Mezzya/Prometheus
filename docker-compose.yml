@@ -71,4 +71,4 @@ services:
           - GF_USERS_ALLOW_SIGN_UP=false
         restart: unless-stopped
         ports:
-          - '3000:3000'
+          - '7777:3000'
