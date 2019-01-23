@@ -67,9 +67,9 @@ services:
         
         entrypoint: /setup.sh
         environment:
-#          - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
-#          - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+         - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
+         - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
           - GF_USERS_ALLOW_SIGN_UP=false
         restart: unless-stopped
         ports:
-          - '7777:3000'
+          - '3000:3000'
