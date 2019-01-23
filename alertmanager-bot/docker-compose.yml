@@ -16,5 +16,7 @@ services:
       - '--telegram.admin=364008202'
       - '--telegram.token=781076437:AAFV9zWpKMr7AJ4jXh_9ISvmMXq8QxOG1r4'
       - '--listen.addr=0.0.0.0:8080'
+    ports:
+      - '9095:9090'
     volumes:
         - /srv/monitoring/alertmanager-bot:/data
