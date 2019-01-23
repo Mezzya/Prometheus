@@ -21,6 +21,13 @@ services:
         image: prom/node-exporter
         ports:
             - '9100:9100'
+    
+    haproxy-explorer:
+        image: quay.io/prometheus/haproxy-exporter:v0.9.0
+        command:
+            - '--haproxy.scrape-uri="http://http://10.35.1.197/haproxy?stats;csv"'
+        ports:
+            - '9101:9101'
 
     alertmanager:
         image: prom/alertmanager
@@ -73,3 +80,4 @@ services:
         restart: unless-stopped
         ports:
           - '3000:3000'
+    
