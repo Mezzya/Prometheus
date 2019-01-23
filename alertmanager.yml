@@ -13,7 +13,7 @@ receivers:
 #     auth_identity: "monitoring@cryptex.com.ua"
 #     auth_password: "123123QWEqwe"
 
-- name: alertmananger-bot
-  webhook_configs:
-  - send_resolved: true
-    url: 'http://localhost:9095'
+  - name: alertmananger-bot
+    webhook_configs:
+    - send_resolved: true
+      url: 'http://localhost:9095'
