@@ -1,5 +1,8 @@
 version: '2.1'
 
+volumes:
+#    prometheus_data: {}
+    grafana_data: {}
 services:
     prometheus:
         image: prom/prometheus
