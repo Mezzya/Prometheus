@@ -1,23 +1,22 @@
-{"dashboard":
-    {
-        "annotations": {
-          "list": [
-            {
-              "builtIn": 1,
-              "datasource": "-- Grafana --",
-              "enable": true,
-              "hide": true,
-              "iconColor": "rgba(0, 211, 255, 1)",
-              "name": "Annotations & Alerts",
-              "type": "dashboard"
-            }
-          ]
-        },
+{"dashboard":{
+        "id": null,
+        "title": "HAproxy Servers | HAproxy",
         "description": "HAproxy backend servers",
+        "tags": [
+          "haproxy",
+          "servers"
+        ],
+        "style": "dark",
+        "timezone": "browser",
         "editable": true,
+        "hideControls": false,
+        "sharedCrosshair": true,
+        "annotations": {
+          "list": []
+        },
+        
         "gnetId": 367,
         "graphTooltip": 1,
-        "id": 5,
         "iteration": 1548256042327,
         "links": [],
         "panels": [
@@ -1866,11 +1865,6 @@
         ],
         "refresh": "1m",
         "schemaVersion": 16,
-        "style": "dark",
-        "tags": [
-          "haproxy",
-          "servers"
-        ],
         "templating": {
           "list": [
             {
@@ -2055,8 +2049,7 @@
             "30d"
           ]
         },
-        "timezone": "browser",
-        "title": "HAproxy Servers | HAproxy",
+        
         "uid": "SJj2FR_ik",
         "version": 2
       }
